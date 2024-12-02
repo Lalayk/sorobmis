@@ -1,0 +1,875 @@
+/* ACCOUNT *****************************************************************************************************/
+
+.nonedisplay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+    transition: max-height 0.5s;
+}
+
+.header .sub-menu-wrap {
+    width: 255px;
+    margin-top: 10px;
+    position: absolute;
+    right: 4%;
+    max-height: 0px;
+    z-index: 3;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.header .sub-menu-wrap.open-menu {
+    max-height: 400px;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+}
+
+.header .sub-menu {
+    background: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header .sub-menu-link,
+.sub-menu-link-logout {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    user-select: none;
+    color: gray;
+}
+
+.header .sub-menu-link p,
+.sub-menu-link-logout p {
+    width: 100%;
+    user-select: none;
+}
+
+.header .sub-menu-link:hover p {
+    font-weight: 600;
+    color: rgb(8, 62, 93);
+}
+
+.header .sub-menu-link-logout:hover p {
+    font-weight: 600;
+    color: rgb(0, 255, 221);
+}
+
+.header .sub-menu-link i,
+.sub-menu-link-logout i {
+    width: 20px;
+    padding: 8px;
+    margin-right: 15px;
+    user-select: none;
+    color: gray;
+}
+
+.header .sub-menu-link:hover i {
+    width: 20px;
+    padding: 8px;
+    margin-right: 15px;
+    color: rgb(8, 66, 93);
+}
+
+.header .sub-menu-link-logout:hover i {
+    width: 20px;
+    padding: 8px;
+    margin-right: 15px;
+    color: rgb(0, 204, 255);
+}
+
+.header .sub-menu-link span,
+.sub-menu-link-logout span {
+    margin-top: -2px;
+    margin-right: 5px;
+    font-size: 15px;
+    transition: transform 0.5s;
+    color: gray;
+    user-select: none;
+}
+
+.header .sub-menu-link:hover span {
+    transform: translateX(5px);
+    color: rgb(93, 8, 39);
+}
+
+.header .sub-menu-link-logout:hover span {
+    transform: translateX(5px);
+    color: red;
+}
+
+/* BOOKING  ****************************************************************************************************/
+
+.bookingdisplay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.bookingoverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.bookingmodal {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    right: 25%;
+    bottom: 5%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.bookingmodal .wrapper {
+    width: 290px;  
+    background-size: 100% 100%;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    background-position: center;
+}
+
+.bookingmodal h3 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.bookingmodal .form-group {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.bookingmodal label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.bookingmodal .form-group .firstname,
+.bookingmodal .form-group .lastname,
+.bookingmodal .form-group .email {
+    width: 610px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.bookingmodal .form-group .date {
+    width: 610px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.bookingmodal .form-group .location {
+    width: 625px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.bookingmodal .form-group .number {
+    width: 532px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 85px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.bookingmodal .form-group .payment {
+    width: 625px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.bookingmodal .form-group .message {
+    width: 610px;
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+    resize: none;
+}
+
+.bookingmodal .form-group i {
+    margin-top: 47px;
+    margin-left: -100px;
+    padding-right: 15px;
+    position: absolute;
+    float: left;
+    border-right: 1px solid gray;
+    cursor: default;
+    font-style: normal;
+    color: gray;
+    user-select: none;
+}
+
+.bookingmodal .form-group p {
+    width: 595px;
+}
+
+.bookingmodal #submit1 {
+    width: 76px;
+    height: 25px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background: rgb(15, 70, 130);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.bookingmodal #submit1:hover {
+    background: rgb(0, 30, 55);
+}
+
+.bookingmodal #cancel {
+    width: 76px;
+    height: 25px;
+    margin-top: -50px;
+    margin-left: 112px;
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(15, 70, 130);
+    font-weight: 600;
+}
+
+.bookingmodal #cancel:hover {
+    background: rgb(228, 243, 255);
+}
+
+/* RATNG  ******************************************************************************************************/
+
+.ratingdisplay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.ratingoverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.ratingmodal {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    right: 25%;
+    bottom: 5%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.ratingmodal .wrapper {
+    width: 290px;  
+    background-size: 100% 100%;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    background-position: center;
+}
+
+.ratingmodal h3 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.ratingmodal .form-group {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.ratingmodal label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.ratingmodal .form-group .firstname,
+.ratingmodal .form-group .lastname {
+    width: 610px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.ratingmodal .form-group .date {
+    width: 610px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.ratingmodal .form-group .location {
+    width: 625px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.ratingmodal .form-group .number {
+    width: 532px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 85px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.ratingmodal .form-group .payment {
+    width: 625px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.ratingmodal .form-group .review {
+    width: 610px;
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+    resize: none;
+}
+
+.ratingmodal .form-group i {
+    margin-top: 47px;
+    margin-left: -100px;
+    padding-right: 15px;
+    position: absolute;
+    float: left;
+    border-right: 1px solid gray;
+    cursor: default;
+    font-style: normal;
+    color: gray;
+    user-select: none;
+}
+
+.ratingmodal .form-group p {
+    width: 595px;
+}
+
+.ratingmodal #submit2 {
+    width: 76px;
+    height: 25px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background: rgb(15, 70, 130);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.ratingmodal #submit1:hover {
+    background: rgb(0, 30, 55);
+}
+
+.ratingmodal #cancel {
+    width: 76px;
+    height: 25px;
+    margin-top: -50px;
+    margin-left: 112px;
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(15, 70, 130);
+    font-weight: 600;
+}
+
+.ratingmodal #cancel:hover {
+    background: rgb(228, 243, 255);
+}
+
+/* EDIT USER PROFILE *******************************************************************************************/
+
+.nodisplay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.editoverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.editmodal {
+    width: 910px;
+    height: 619px;
+    display: inline-flex;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.editmodal .wrapper5 {
+    width: 290px; 
+    height: 230px; 
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 50px;
+    border: 2px solid gray; 
+    background-size: 100% 100%;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    background-position: center;
+}
+
+.editmodal .wrapper5 img {
+    width: 230px;
+    height: 230px;
+}
+
+.editmodal .wrapper5 .file {
+    width: 230px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    box-sizing: border-box;
+    padding: 15px 110px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+}
+
+.editmodal .wrapper5 #selectedImage1 {
+    max-width: 250px; 
+    height: 250px; 
+    background-size: cover;
+    background-position: center;
+}
+
+.editmodal .wrapper5 .file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.editmodal .wrapper5 .file::before {
+    content: "\f030";
+    font-family: FontAwesome;
+    color: white;
+    display: inline-block;
+    user-select: none;
+}
+
+.editmodal .wrapper5 .file::after {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: block;
+    top: 70px;
+    font-size: 15px;
+    position: absolute;
+}
+
+.editmodal .wrapper5 .file:hover {
+    opacity: 1;
+}
+
+.editmodal h1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.editmodal .form-group {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.editmodal label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.editmodal .form-group .firstname {
+    margin-right: 25px;
+}
+
+.editmodal .form-group .firstname,
+.editmodal .form-group .lastname {
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.editmodal .form-group .email {
+    width: 580px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.editmodal .form-group .location {
+    width: 599px;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.editmodal .form-group .number {
+    width: 507px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 85px;
+    border-radius: 7px;
+    align-items: center;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.editmodal .form-group i {
+    margin-top: 47px;
+    margin-left: -100px;
+    padding-right: 15px;
+    position: absolute;
+    float: left;
+    border-right: 1px solid gray;
+    cursor: default;
+    font-style: normal;
+    color: gray;
+    user-select: none;
+}
+
+.editmodal .form-group p {
+    width: 595px;
+}
+
+.editmodal .form-group li {
+    margin-top: -37px;
+    font-size: 18px;
+    float: right;
+    list-style: none;
+}
+
+.editmodal .form-group li a {
+    color: darkslategray;
+}
+
+.editmodal #save {
+    width: 100px;
+    height: 50px;
+    margin-top: -10px;
+    font-size: 17px;
+    background: rgb(15, 70, 130);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.editmodal #save:hover {
+    background: rgb(0, 30, 55);
+}
+
+.editmodal #cancel {
+    width: 76px;
+    height: 25px;
+    margin-top: -50px;
+    margin-left: 112px;
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(15, 70, 130);
+    font-weight: 600;
+}
+
+.editmodal #cancel:hover {
+    background: rgb(228, 243, 255);
+}
+
+/* EDIT USER SETTINGS ******************************************************************************************/
+
+.nosettingsdisplay,
+.nosettingsdisplay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.settingsoverlay,
+.settingsoverlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: max-height 0.5s;
+}
+
+.settingsmodal,
+.settingsmodal2 {
+    width: 600px;
+    height: 619px;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.settingsmodal h1,
+.settingsmodal2 h1 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.settingsmodal .form-group,
+.settingsmodal2 .form-group {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.settingsmodal label,
+.settingsmodal2 label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    user-select: none;
+    color: darkslategray;
+}
+
+.settingsmodal .form-group input,
+.settingsmodal2 .form-group input {
+    width: 585px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 17px;
+    border: 2px solid gray;
+}
+
+.settingsmodal i,
+.settingsmodal2 i {
+    margin-top: -50px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    float: right;
+    color: gray;
+}
+
+.settingsmodal i:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.settingsmodal #save,
+.settingsmodal2 #save {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 17px;
+    background: rgb(15, 70, 130);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.settingsmodal #save:hover,
+.settingsmodal2 #save:hover {
+    background: rgb(0, 30, 55);
+}
+
+.settingsmodal #cancel,
+.settingsmodal2 #cancel {
+    width: 76px;
+    height: 25px;
+    margin-top: -50px;
+    margin-left: 112px;
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(15, 70, 130);
+    font-weight: 600;
+}
+
+.settingsmodal #cancel:hover,
+.settingsmodal2 #cancel:hover {
+    background: rgb(228, 243, 255);
+}

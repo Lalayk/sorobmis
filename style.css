@@ -1,0 +1,472 @@
+body {
+    width: 1349px;
+    margin: 0;
+    background-size: cover;
+    background: url(img/2.jpg);
+    background-attachment: fixed;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    animation: transitionIn 0.75s;
+}
+
+.custom-fade {
+    width: 1365.5px;
+    height: 618.5px;
+    animation: custom-fade-animation 1s ease-in-out;
+}
+
+
+@keyframes custom-fade-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 10;
+        transform: translateY(0px);
+    }
+}
+
+/* LANDING FORM ************************************************************************************************/
+
+.indexContainer {
+    position: relative;
+    width: 1300px;
+    height: 460px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+.indexContainer .card {
+    position: relative;
+    width: 260px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, .5);
+    transition: 0.3s ease-in-out;
+}
+
+.indexContainer .card:hover {
+    height: 300px;
+}
+
+.indexContainer .card .img {
+    position: relative;
+    width: 230px;
+    height: 150px;
+    margin-bottom: -15px;
+    top: -60px;
+    left: 15px;
+    z-index: 1;
+    background: transparent;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+}
+
+.indexContainer .card .img img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.indexContainer .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.indexContainer .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition:  0.6s;
+}
+
+/* ABOUT *******************************************************************************************************/
+
+.aboutContainer {
+    position: relative;
+    width: 1300px;
+    height: 210px;
+    margin-left: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.aboutContainer .img {
+    position: relative;
+    margin: 45px;
+}
+
+.aboutContainer img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.aboutContainer label {
+    font-weight: bold;
+    color: white;
+}
+
+.aboutContainer span {
+    color: white;
+}
+
+/* LOG IN FORM *************************************************************************************************/
+
+.login_form {
+    display: flex;
+}
+
+.login_form .wrapper {
+    width: 400px;
+    margin-left: 151px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wrapper .input {
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+}
+
+.login_form .input input {
+    width: 76.5%;
+    height: 36px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: black;
+    padding: 0 45px 0 45px;
+}
+
+.input i {
+    margin-left: 20px;
+    transform: translateY(-200%);
+    font: 15px;
+    color: rgb(93, 8, 39);
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 20px 0 20px;
+    margin-top: 50px;
+}
+
+.remember-forgot {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover {
+    border: 2px solid rgb(93, 8, 39);
+}
+
+.wrapper .register-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 18px;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* CLIENT REGISTRATION FORM ************************************************************************************/
+
+.reg_client_form {
+    display: flex;
+}
+
+.reg_client_form .wrapper {
+    width: 400px;
+    margin-left: 155px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.reg_client_form .wrapper h1 {
+    font: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reg_client_form .wrapper .inputs {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    display: flex;
+}
+
+.reg_client_form .wrapper .inputs .first {
+    margin-right: 10px;
+}
+
+.reg_client_form .wrapper .input {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+}
+
+.reg_client_form .inputs input {
+    width: 40%;
+    height: 36px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: black;
+    padding: 0 20px 0 20px;
+}
+
+.reg_client_form .input input {
+    width: 89%;
+    height: 36px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: black;
+    padding: 0 20px 0 20px;
+}
+
+.reg_client_form i {
+    margin-top: 72px;
+    margin-left: -45px;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    color: rgb(93, 8, 39);
+}
+
+.reg_client_form .wrapper .btn {
+    width: 100%;
+    height: 45px;
+    margin: 20px 0 15px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+
+.reg_client_form .wrapper .btn:hover {
+    border: 2px solid rgb(93, 8, 39);
+}
+
+/* HELPER REGISTRATION FORM ************************************************************************************/
+
+.reg_helper_form {
+    display: flex;
+}
+
+.reg_helper_form header ul #register a {
+    margin-top: -6px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    float: right;
+    position: relative;
+    transition: .3s ease;
+}
+
+.reg_helper_form .wrapper {
+    width: 400px;
+    margin-left: 155px;
+    margin-bottom: 20px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.reg_helper_form .wrapper h1 {
+    font: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reg_helper_form .wrapper .inputs {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    display: flex;
+}
+
+.reg_helper_form .wrapper .inputs .first {
+    margin-right: 10px;
+}
+
+.reg_helper_form .wrapper .input {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+}
+
+.reg_helper_form .inputs input {
+    width: 40%;
+    height: 36px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: black;
+    padding: 0 20px 0 20px;
+}
+
+.reg_helper_form .input input {
+    width: 89%;
+    height: 36px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: black;
+    padding: 0 20px 0 20px;
+}
+
+.reg_helper_form i {
+    margin-top: 72px;
+    margin-left: -45px;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    color: rgb(93, 8, 39);
+}
+
+.reg_helper_form .combobox .select {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 40px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-image: url(img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 365px;
+}
+
+.reg_helper_form .combobox .select::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.reg_helper_form .profile-photo {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.reg_helper_form .profile-photo .form-control-file {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.reg_helper_form .wrapper .btn {
+    width: 100%;
+    height: 45px;
+    margin: 30px 0 15px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+
+.reg_helper_form .wrapper .btn:hover {
+    border: 2px solid rgb(93, 8, 39);
+}

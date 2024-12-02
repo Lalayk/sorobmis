@@ -1,0 +1,303 @@
+/* USER HOME PAGE **********************************************************************************************/
+
+.box-select {
+    margin-left: 15px;
+}
+
+.searchbox {
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 120px;
+    display: flex;
+    position: relative;
+    background-position: center;
+}
+
+.searchbox .icon-map {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: -10px;
+    color: rgb(93, 8, 39);
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+}
+
+.searchbox .select {
+    width: 450px;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-image: url(img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 425px;
+}
+
+.box-select .combobox {
+    width: 450px;
+    height: 40px;
+    margin-top: -40px;
+    margin-left: 600px;
+    float: left;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-position: center;
+}
+
+.box-select .combobox .icon-prof {
+    width: 60px;
+    height: 60px;
+    margin-top: 2px;
+    top: 0;
+    left: -10px;
+    line-height: 40px;
+    color: rgb(29, 233, 182);
+    position: absolute;
+    text-align: center;
+}
+
+.box-select .combobox .select {
+    width: 450px;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-image: url(img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 425px;
+}
+
+#submit {
+    margin-top: -39px;
+    margin-left: 1070px;
+    float: left;
+    list-style: none;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(93, 8, 39);
+    transition: .3s ease;
+    border: none;
+    font-size: 15px;
+}
+
+#submit:hover {
+    background-color: rgb(170, 8, 39);
+}
+
+/* MAP *********************************************************************************************************/
+
+.searchmap {
+    width: 680px;
+    margin-top: 20px;
+    margin-left: 345px;
+    display: flex;
+    position: relative;
+    background-position: center;
+}
+
+.searchmap .icon-map {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: -10px;
+    color: rgb(93, 8, 39);
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+}
+
+.searchmap .select {
+    width: 680px;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-image: url(img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: 655px;
+}
+
+#submitmap {
+    margin-top: -39px;
+    margin-left: 880px;
+    float: left;
+    list-style: none;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(15, 70, 130);
+    transition: .3s ease;
+    border: none;
+    font-size: 15px;
+}
+
+#submitmap:hover {
+    background-color: rgb(0, 30, 55);
+}
+
+/* TRANSACTION USER ********************************************************************************************/
+
+.transaction_form h3 {
+    margin-left: -170px;
+    float: left;
+    color: white;
+}
+
+/* SETTINGS ****************************************************************************************************/
+
+.settings_user {
+    margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+}
+
+.settings_user h1 {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Arial;
+    user-select: none;
+}
+
+.settings_user .box {
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.settings_user .group {
+    width: 630px;
+    padding: 40px;
+}
+
+.settings_user label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    user-select: none;
+}
+
+.settings_user i {
+    margin-top: -15px;
+    padding: 15px;
+    border-radius: 50px;
+    float: right;
+    color: white;
+    user-select: none;
+}
+
+.settings_user i:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.settings_user p {
+    margin-bottom: 0px;
+    margin-right: 200px;
+    font-size: 16px;
+    color: white;
+    user-select: none;
+}
+
+/* CLIENT PROFILE FORM *****************************************************************************************/
+
+.profile_user {
+    width: 1230px;
+    margin-left: 70px;
+    border-radius: 20px;
+    background: white;
+}
+
+.profile_user .form {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: inline-flex;
+}
+
+.profile_user .wrapper {
+    width: 250px;
+    height: 250px;
+    margin-top: 23px;
+    margin-left: 50px;
+    border: 2px solid gray;
+    background-size: 100% 100%;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile_user .wrapper img {
+    width: 250px;
+    height: 250px;
+}
+
+.profile_user .wrapper1 {
+    margin-left: 50px;
+}
+
+.profile_user h1 {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+}
+
+.profile_user .info {
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile_user .info i {
+    color: rgb(93, 8, 39);
+    margin-right: 20px;
+}
+
+.profile_user .edit {
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 15px;
+    background: rgb(15, 70, 130);
+    font-family: 'Arial';
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    font-weight: 600;
+}
+
+.profile_user .edit:hover {
+    background: rgb(194, 211, 224);
+}
+
+
+.div .wrapper {
+    width: 50px;
+    height: 50px;
+}

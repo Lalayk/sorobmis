@@ -1,0 +1,8 @@
+{
+    "require": {
+        "infobip/infobip-api-php-client": "^5.1",
+        "mpdf/mpdf": "^6.1",
+        "tecnickcom/tcpdf": "^6.6",
+        "dompdf/dompdf": "^2.0"
+    }
+}
